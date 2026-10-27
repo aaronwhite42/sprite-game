@@ -1,5 +1,6 @@
 using UnityEngine;
-
+using UnityEngine.UIElements;
+using UnityEngine.SceneManagement;
 public class Obstacle : MonoBehaviour
 {
     public float minSize = 0.3f;
@@ -7,6 +8,7 @@ public class Obstacle : MonoBehaviour
     public float minSpeed = 150f;
     public float maxSpeed = 500f;
     public float maxSpinSpeed = 10f;
+    public GameObject bounceEffectPrefab;
     Rigidbody2D rigidBody;
 
 
@@ -30,5 +32,13 @@ public class Obstacle : MonoBehaviour
     void Update()
     {
 
+    }
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        Vector2 contactPoint = collision.GetContact(0).point; 
+        GameObject bounceEffect = Instantiate(bounceEffectPrefab, contactPoint, Quaternion.identity);
+
+        // Destroy the effect after 1 second
+        Destroy(bounceEffect, 1f);
     }
 }

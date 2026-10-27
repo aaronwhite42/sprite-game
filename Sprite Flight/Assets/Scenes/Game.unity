@@ -1995,6 +1995,10 @@ PrefabInstance:
       propertyPath: maxSpinSpeed
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 4524047581216314169, guid: f3921771f1c4d40b89ced89bd4c167c2, type: 3}
+      propertyPath: bounceEffectPrefab
+      value: 
+      objectReference: {fileID: 8746517148561517651, guid: 40e2852ccd25649c3b138327ca9befc0, type: 3}
     - target: {fileID: 6663865334464028794, guid: f3921771f1c4d40b89ced89bd4c167c2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

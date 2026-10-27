@@ -128,3 +128,6 @@ Desktop.ini
 # Environment / secrets
 .env
 .env.*
+
+.fake
+Sprite Flight/dist:game

@@ -515,7 +515,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AtomSimulation
   atomPrefab: {fileID: 4400105857828219216, guid: f234c6c9c564a42e8b48dba08037eee0, type: 3}
-  atomCount: 80
+  atomCount: 200
   wallLeft: {fileID: 654751505}
   wallRight: {fileID: 1736478094}
   wallTop: {fileID: 1717094631}
@@ -525,7 +525,10 @@ MonoBehaviour:
   temperature: 300
   referenceTemperature: 300
   referenceRmsSpeed: 6
-  thermostatRate: 2
+  attractionDepth: 600
+  attractionRange: 2.5
+  gravity: 1
+  gasTemperatureSmoothing: 0.5
   speedColors:
     serializedVersion: 2
     key0: {r: 0.15, g: 0.35, b: 1, a: 1}
@@ -557,6 +560,36 @@ MonoBehaviour:
     m_NumColorKeys: 3
     m_NumAlphaKeys: 2
   maxColorSpeed: 15
+  wallColors:
+    serializedVersion: 2
+    key0: {r: 1, g: 1, b: 1, a: 1}
+    key1: {r: 1, g: 0.9, b: 0.2, a: 1}
+    key2: {r: 0.9, g: 0.1, b: 0.05, a: 0}
+    key3: {r: 0, g: 0, b: 0, a: 0}
+    key4: {r: 0, g: 0, b: 0, a: 0}
+    key5: {r: 0, g: 0, b: 0, a: 0}
+    key6: {r: 0, g: 0, b: 0, a: 0}
+    key7: {r: 0, g: 0, b: 0, a: 0}
+    ctime0: 0
+    ctime1: 32768
+    ctime2: 65535
+    ctime3: 0
+    ctime4: 0
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_ColorSpace: -1
+    m_NumColorKeys: 3
+    m_NumAlphaKeys: 2
   uiDocument: {fileID: 778792055}
 --- !u!4 &1163474639
 Transform:
@@ -799,8 +832,8 @@ Transform:
   m_GameObject: {fileID: 1717094628}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.2977, y: 10.5155, z: 0}
-  m_LocalScale: {x: 26.74473, y: 0.88366425, z: 1}
+  m_LocalPosition: {x: 6.2977, y: 9.5685, z: 0}
+  m_LocalScale: {x: 26.74473, y: 2.777622, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 413437468}
